@@ -44,7 +44,7 @@ export const BooksList = () => {
     Useful Information
   </Box>
 </Flex>
-       <Flex flexDirection="column" alignItems="center" my={2} style={{backgroundColor:'#FBECEC', borderRadius:12}}>
+       <Flex flexDirection="column" alignItems="center" my={2} style={{backgroundColor:'#F3DBDB', borderRadius:12}}>
             {
               
                 data.map(({title, bookDesc, id})=>(
