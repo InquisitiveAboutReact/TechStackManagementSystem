@@ -6,7 +6,7 @@ import { Flex,Box } from "rebass/styled-components";
 import Loader from "react-loader-spinner";
 import { BookItem } from "./BookItem";
 import './bookStyle.css';
-import editbooklogo from './editlogo.png';
+
 
 export const BooksList = () => {
   const { data, error, isLoading, isError } = useQuery("data", getAllBooks);
