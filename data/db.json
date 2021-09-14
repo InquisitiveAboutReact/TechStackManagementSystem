@@ -1,0 +1,34 @@
+{
+  "books": [
+    {
+      "title": "React JS Tutorial",
+      "bookDesc": "https://reactjs.org/ by React JS Team",
+      "id": 1
+    },
+    {
+      "title": "Vue JS Tutorial",
+      "bookDesc": "https://vuejs.org/v2/guide/",
+      "id": 2
+    },
+    {
+      "id": 3,
+      "title": "Angular Tutorial",
+      "bookDesc": "https://angularjs.org/"
+    },
+    {
+      "id": 4,
+      "title": "Next JS Tutorial",
+      "bookDesc": "https://nextjs.org/"
+    },
+    {
+      "title": "Python Tutorial",
+      "bookDesc": "https://www.python.org/",
+      "id": 5
+    },
+    {
+      "title": "Node JS Tutorial",
+      "bookDesc": "https://nodejs.org/en/",
+      "id": 6
+    }
+  ]
+}
