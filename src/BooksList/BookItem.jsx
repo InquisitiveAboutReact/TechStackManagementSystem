@@ -10,6 +10,7 @@ import { useMutation, useQueryClient } from "react-query";
 import {removeBook} from '../api';
 import Loader from 'react-loader-spinner';
 import editbooklogo from './editlogo.png';
+import "./bookStyle.css";
 
 export const BookItem = ({ title, id, bookDesc }) => {
     const queryClient = useQueryClient();
@@ -21,16 +22,21 @@ export const BookItem = ({ title, id, bookDesc }) => {
     }
   return (
     <>
-    <Flex p={3} width="100%" alignItems="center">
-    <Image size={20} src={editbooklogo}/>
+    <Flex p={3} width="100%" alignItems="center"> 
+    <div class="tooltip">
+    <Image size={20} src={editbooklogo} className="tooltip"/>
+    <span class="tooltiptext">Click on the link to update</span>
+    </div>
       <Link component={StyledLink} to={`/update-book/${id}`} mr="auto">
         {title}
       </Link>
       <Text sx={{ color: 'black' }}>{bookDesc}</Text>
       <Button
         sx={{
+          backgroundColor:"#ED0B0B",
+          cursor:"pointer",
           ":hover": {
-            backgroundColor: "tomato",
+            backgroundColor: "#A40202",
           },
         }}
         ml={5}
