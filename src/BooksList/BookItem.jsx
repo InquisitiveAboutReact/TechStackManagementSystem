@@ -1,6 +1,5 @@
 import {
   Flex,
-  Box,
   Text,
   Button,
   Link as StyledLink,
@@ -17,8 +16,6 @@ export const BookItem = ({ title, id, bookDesc }) => {
     const remove = async () => {
         await mutateAsync(id);
         queryClient.invalidateQueries() // Invalidate every query in the cache
-        //queryClient.invalidateQueries("books") // Invalidate every query with a key that starts with `books`
-
     }
   return (
     <Flex p={3} width="100%" alignItems="center">

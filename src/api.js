@@ -57,7 +57,7 @@ export const updateBook = async ({id, ...data})=>{
 
 export const getBook = async ({queryKey}) => {
     /** eslint-disable no-unused-vars */
-    const [_key, {id}] = queryKey;   // Destructing the queryKey 
+    const [{id}] = queryKey;   // Destructing the queryKey 
     const response = await fetch(`http://localhost:5000/books/${id}`);
 
     if(!response.ok) {
